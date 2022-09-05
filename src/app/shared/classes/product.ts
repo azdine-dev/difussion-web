@@ -12,14 +12,14 @@ export interface Product {
   featured?: boolean;
   new?: boolean;
   short_desc?: boolean;
-  category?: Array<{
+  categories?: Array<{
     name?: string;
     slug?: string;
   }>;
   pictures?: Array<{
     width?: number;
     height?: number;
-    url: number;
+    url: string;
   }>;
   sm_pictures?: Array<{
     formats?: {
@@ -38,7 +38,7 @@ export interface Product {
     };
     width?: number;
     height?: number;
-    url?: number;
+    url?: string;
   }>;
   variants?: Array<{
     color?: string;

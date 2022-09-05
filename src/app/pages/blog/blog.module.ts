@@ -20,28 +20,31 @@ import { SingleSidebarPageComponent } from './single-sidebar/single-sidebar.comp
 import { BlogSidebarComponent } from './shared/blog-sidebar/blog-sidebar.component';
 import { BlogEntryIsotopeComponent } from './shared/blog-entry-isotope/blog-entry-isotope.component';
 import { RelatedPostsComponent } from './shared/related-posts/related-posts.component';
+import { NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-	declarations: [
-		ClassicPageComponent,
-		ListingPageComponent,
-		GridPageComponent,
-		MasonryPageComponent,
-		MaskGridPageComponent,
-		MaskMasonryPageComponent,
-		SingleDefaultPageComponent,
-		SingleFluidPageComponent,
-		SingleSidebarPageComponent,
-		BlogSidebarComponent,
-		BlogEntryIsotopeComponent,
-		RelatedPostsComponent
-	],
-	imports: [
-		CommonModule,
-		SharedModule,
-		BlogRoutingModule,
-		OwlModule
-	]
+  declarations: [
+    ClassicPageComponent,
+    ListingPageComponent,
+    GridPageComponent,
+    MasonryPageComponent,
+    MaskGridPageComponent,
+    MaskMasonryPageComponent,
+    SingleDefaultPageComponent,
+    SingleFluidPageComponent,
+    SingleSidebarPageComponent,
+    BlogSidebarComponent,
+    BlogEntryIsotopeComponent,
+    RelatedPostsComponent,
+  ],
+  imports: [
+    CommonModule,
+    SharedModule,
+    BlogRoutingModule,
+    OwlModule,
+    NgbNavModule,
+    NgbModule
+  ],
+  providers: [NgbNavModule,NgbModule],
 })
-
-export class BlogModule { }
+export class BlogModule {}

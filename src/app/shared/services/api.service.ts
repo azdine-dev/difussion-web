@@ -37,7 +37,7 @@ export class ApiService {
 
     temp += '&demo=' + environment.demo;
 
-    return this.http.get(`${environment.SERVER_URL}/${temp}`);
+    return this.http.get(`${environment.SERVER_URL}/api/${temp}`);
   }
 
   /**

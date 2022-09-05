@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { OwlModule } from 'angular-owl-carousel';
 
 import { SharedModule } from '../../shared/shared.module';
@@ -23,9 +23,11 @@ import { RecentCollectionComponent } from './recent-collection/recent-collection
 		CommonModule,
 		RouterModule,
 		NgbModule,
+    NgbNavModule,
 		OwlModule,
 		SharedModule
-	]
+	],
+  exports:[NgbModule,NgbNavModule]
 })
 
 export class HomeModule { }

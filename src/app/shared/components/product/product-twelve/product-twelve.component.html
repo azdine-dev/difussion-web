@@ -11,15 +11,15 @@
       >Out of Stock</span
     >
 
-    <a [routerLink]="['/product/default/' + product.slug]">
+    <a [routerLink]="['/product/' + product.slug]">
       <molla-image
-        [src]="SERVER_URL + product.sm_pictures[0].formats.small.url"
+        [src]="product.sm_pictures[0].url"
         alt="Product"
         class="product-image"
       >
       </molla-image>
       <molla-image
-        [src]="SERVER_URL + product.sm_pictures[1].formats.small.url"
+        [src]="product.sm_pictures[1].url"
         alt="Product"
         class="product-image-hover"
         *ngIf="product.sm_pictures[1]"
@@ -40,17 +40,17 @@
 
   <div class="product-body">
     <div class="product-cat">
-      <span *ngFor="let cat of product.category; let i = index">
+      <span *ngFor="let cat of product.categories; let i = index">
         <a
           [routerLink]="['/shop/sidebar/list']"
           [queryParams]="{ category: cat.slug }"
           >{{ cat.name }}</a
-        >{{ i < product.category.length - 1 ? "," : "" }}
+        >{{ i < product.categories.length - 1 ? "," : "" }}
       </span>
     </div>
 
     <h3 class="product-title">
-      <a [routerLink]="['/product/default/' + product.slug]">{{
+      <a [routerLink]="['/product/' + product.slug]">{{
         product.name
       }}</a>
     </h3>
@@ -114,7 +114,7 @@
       *ngIf="product.stock && product.stock !== 0"
     >
       <a
-        [routerLink]="['/product/default/' + product.slug]"
+        [routerLink]="['/product/' + product.slug]"
         class="btn-product btn-cart btn-select"
         *ngIf="product.variants.length > 0; else cartBlock"
       >

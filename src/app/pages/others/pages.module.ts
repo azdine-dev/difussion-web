@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { OwlModule } from 'angular-owl-carousel';
 import { GoogleMapsModule } from '@angular/google-maps';
@@ -19,29 +19,30 @@ import { ContactOnePageComponent } from './contact-one/contact-one.component';
 import { ContactTwoPageComponent } from './contact-two/contact-two.component';
 import { ComingSoonPageComponent } from './coming-soon/coming-soon.component';
 
-@NgModule( {
-	declarations: [
-		AboutOneComponent,
-		AboutTwoPageComponent,
-		FaqsPageComponent,
-		LoginPageComponent,
-		PageNotFoundComponent,
-		ContactOnePageComponent,
-		ContactTwoPageComponent,
-		ComingSoonPageComponent
-	],
+@NgModule({
+  declarations: [
+    AboutOneComponent,
+    AboutTwoPageComponent,
+    FaqsPageComponent,
+    LoginPageComponent,
+    PageNotFoundComponent,
+    ContactOnePageComponent,
+    ContactTwoPageComponent,
+    ComingSoonPageComponent,
+  ],
 
-	imports: [
-		CommonModule,
-		PagesRoutingModule,
-		SharedModule,
-		NgbModule,
-		RouterModule,
-		OwlModule,
-		GoogleMapsModule,
-		HttpClientModule,
-		HttpClientJsonpModule
-	]
-} )
-
-export class PagesModule { }
+  imports: [
+    CommonModule,
+    PagesRoutingModule,
+    SharedModule,
+    NgbModule,
+    RouterModule,
+    OwlModule,
+    GoogleMapsModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
+    NgbNavModule,
+  ],
+  providers: [NgbNavModule,NgbModule],
+})
+export class PagesModule {}

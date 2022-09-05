@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { NgbModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbModal, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { LightboxModule } from 'ngx-lightbox';
 import { OwlModule } from 'angular-owl-carousel';
 
@@ -35,49 +35,47 @@ import { RelatedProductsTwoComponent } from './shared/related-products/related-p
 import { ToggleSidebarComponent } from './shared/toggle-sidebar/toggle-sidebar.component';
 
 @NgModule({
-	declarations: [
-		DefaultPageComponent,
-		CenteredPageComponent,
-		ExtendedPageComponent,
-		GalleryPageComponent,
-		StickyInfoPageComponent,
-		SidebarPageComponent,
-		FullWidthPageComponent,
-		MasonryPageComponent,
+  declarations: [
+    DefaultPageComponent,
+    CenteredPageComponent,
+    ExtendedPageComponent,
+    GalleryPageComponent,
+    StickyInfoPageComponent,
+    SidebarPageComponent,
+    FullWidthPageComponent,
+    MasonryPageComponent,
 
-		GalleryDefaultComponent,
-		GalleryExtendComponent,
-		GalleryStickyComponent,
-		GalleryMasonryComponent,
+    GalleryDefaultComponent,
+    GalleryExtendComponent,
+    GalleryStickyComponent,
+    GalleryMasonryComponent,
 
-		DetailOneComponent,
-		DetailTwoComponent,
-		DetailThreeComponent,
+    DetailOneComponent,
+    DetailTwoComponent,
+    DetailThreeComponent,
 
-		InfoOneComponent,
-		InfoTwoComponent,
-		InfoThreeComponent,
+    InfoOneComponent,
+    InfoTwoComponent,
+    InfoThreeComponent,
 
-		RelatedProductsOneComponent,
-		RelatedProductsTwoComponent,
-		ToggleSidebarComponent,
-	],
+    RelatedProductsOneComponent,
+    RelatedProductsTwoComponent,
+    ToggleSidebarComponent,
+  ],
 
-	imports: [
-		CommonModule,
-		ProductRoutingModule,
-		SharedModule,
-		RouterModule,
-		NgbModule,
-		OwlModule,
-		LightboxModule,
-	],
+  imports: [
+    CommonModule,
+    ProductRoutingModule,
+    SharedModule,
+    RouterModule,
+    NgbModule,
+    NgbNavModule,
+    OwlModule,
+    LightboxModule,
+  ],
 
-	exports: [],
+  exports: [],
 
-	providers: [
-		NgbModal
-	]
+  providers: [NgbModal, NgbNavModule,NgbModule],
 })
-
-export class ProductModule { }
+export class ProductModule {}

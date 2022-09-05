@@ -1,5 +1,5 @@
 {
-  "name": "demo10",
+  "name": "difussion",
   "version": "1.0.0",
   "homepage": "https://d-themes.com/angular/molla/demo1",
   "scripts": {
@@ -30,6 +30,7 @@
     "@ngrx/store-devtools": "^12.5.1",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
+    "@schematics/angular": "^14.2.1",
     "ajv": "^8.11.0",
     "angular-owl-carousel": "^1.0.0",
     "animate.css": "^4.1.1",

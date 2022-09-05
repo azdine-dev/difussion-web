@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { OwlModule } from 'angular-owl-carousel';
 
@@ -29,11 +29,9 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './shared/layout/layout.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LayoutComponent,
-  ],
+  declarations: [AppComponent, LayoutComponent],
   imports: [
+    NgbNavModule,
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
@@ -59,8 +57,7 @@ import { LayoutComponent } from './shared/layout/layout.component';
     StoreDevtoolsModule.instrument(),
   ],
 
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [NgbNavModule,NgbModule],
+  bootstrap: [AppComponent],
 })
-
-export class AppModule { }
+export class AppModule {}

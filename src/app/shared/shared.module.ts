@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from "@angular/router";
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { OwlModule } from 'angular-owl-carousel';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 
@@ -74,140 +74,141 @@ import { PostThreeComponent } from './components/blog-post/post-three/post-three
 import { PostFourComponent } from './components/blog-post/post-four/post-four.component';
 
 @NgModule({
-	declarations: [
-		// header
-		CartMenuComponent,
-		CompareMenuComponent,
-		WishlistMenuComponent,
-		CategoryMenuComponent,
-		MainMenuComponent,
-		HeaderSearchComponent,
-		MobileButtonComponent,
-		MobileMenuComponent,
+  declarations: [
+    // header
+    CartMenuComponent,
+    CompareMenuComponent,
+    WishlistMenuComponent,
+    CategoryMenuComponent,
+    MainMenuComponent,
+    HeaderSearchComponent,
+    MobileButtonComponent,
+    MobileMenuComponent,
 
-		HeaderComponent,
-		FooterComponent,
+    HeaderComponent,
+    FooterComponent,
 
-		// product
-		ProductOneComponent,
-		ProductTwoComponent,
-		ProductThreeComponent,
-		ProductFourComponent,
-		ProductFiveComponent,
-		ProductSixComponent,
-		ProductSevenComponent,
-		ProductEightComponent,
-		ProductNineComponent,
-		ProductTenComponent,
-		ProductElevenComponent,
-		ProductTwelveComponent,
+    // product
+    ProductOneComponent,
+    ProductTwoComponent,
+    ProductThreeComponent,
+    ProductFourComponent,
+    ProductFiveComponent,
+    ProductSixComponent,
+    ProductSevenComponent,
+    ProductEightComponent,
+    ProductNineComponent,
+    ProductTenComponent,
+    ProductElevenComponent,
+    ProductTwelveComponent,
 
-		// single-use components
-		BreadcrumbComponent,
-		PageHeaderComponent,
-		QuickViewComponent,
-		QuickViewTwoComponent,
-		NewsletterModalComponent,
-		LoginModalComponent,
-		VideoModalComponent,
-		QuantityInputComponent,
-		CountDownComponent,
-		AccordionComponent,
-		CardComponent,
-		PaginationComponent,
-		IsotopeGridComponent,
-		ImageComponent,
+    // single-use components
+    BreadcrumbComponent,
+    PageHeaderComponent,
+    QuickViewComponent,
+    QuickViewTwoComponent,
+    NewsletterModalComponent,
+    LoginModalComponent,
+    VideoModalComponent,
+    QuantityInputComponent,
+    CountDownComponent,
+    AccordionComponent,
+    CardComponent,
+    PaginationComponent,
+    IsotopeGridComponent,
+    ImageComponent,
 
-		// directives
-		BgParallaxDirective,
-		TabClickDirective,
-		ProductHoverDirective,
-		ContentAnimDirective,
+    // directives
+    BgParallaxDirective,
+    TabClickDirective,
+    ProductHoverDirective,
+    ContentAnimDirective,
 
-		// pipes
-		CatFilterPipe,
-		AttrFilterPipe,
-		SafeContentPipe,
-		CountDownComponent,
+    // pipes
+    CatFilterPipe,
+    AttrFilterPipe,
+    SafeContentPipe,
+    CountDownComponent,
 
-		// // blog-post
-		PostOneComponent,
-		PostTwoComponent,
-		PostThreeComponent,
-		PostFourComponent,
-		CountToComponent
-	],
+    // // blog-post
+    PostOneComponent,
+    PostTwoComponent,
+    PostThreeComponent,
+    PostFourComponent,
+    CountToComponent,
+  ],
 
-	imports: [
-		CommonModule,
-		RouterModule,
-		NgbModule,
-		TranslateModule,
-		OwlModule,
-		LazyLoadImageModule,
-	],
+  imports: [
+    CommonModule,
+    RouterModule,
+    NgbModule,
+    NgbNavModule,
+    TranslateModule,
+    OwlModule,
+    LazyLoadImageModule,
+  ],
 
-	exports: [
-		// header
-		HeaderComponent,
+  exports: [
+    // header
+    HeaderComponent,
 
-		// mobile-menus
-		MobileMenuComponent,
+    // mobile-menus
+    MobileMenuComponent,
 
-		// footer
-		FooterComponent,
+    // footer
+    FooterComponent,
 
-		// products
-		ProductOneComponent,
-		ProductTwoComponent,
-		ProductThreeComponent,
-		ProductFourComponent,
-		ProductFiveComponent,
-		ProductSixComponent,
-		ProductSevenComponent,
-		ProductEightComponent,
-		ProductNineComponent,
-		ProductTenComponent,
-		ProductElevenComponent,
-		ProductTwelveComponent,
+    // products
+    ProductOneComponent,
+    ProductTwoComponent,
+    ProductThreeComponent,
+    ProductFourComponent,
+    ProductFiveComponent,
+    ProductSixComponent,
+    ProductSevenComponent,
+    ProductEightComponent,
+    ProductNineComponent,
+    ProductTenComponent,
+    ProductElevenComponent,
+    ProductTwelveComponent,
 
-		// // single-use components
-		BreadcrumbComponent,
-		PageHeaderComponent,
-		CountDownComponent,
-		CountToComponent,
-		AccordionComponent,
-		CardComponent,
-		PaginationComponent,
-		QuantityInputComponent,
-		IsotopeGridComponent,
-		ImageComponent,
+    // // single-use components
+    BreadcrumbComponent,
+    PageHeaderComponent,
+    CountDownComponent,
+    CountToComponent,
+    AccordionComponent,
+    CardComponent,
+    PaginationComponent,
+    QuantityInputComponent,
+    IsotopeGridComponent,
+    ImageComponent,
 
-		// directives
-		BgParallaxDirective,
-		TabClickDirective,
-		ProductHoverDirective,
-		ContentAnimDirective,
+    // directives
+    BgParallaxDirective,
+    TabClickDirective,
+    ProductHoverDirective,
+    ContentAnimDirective,
 
-		// pipes
-		CatFilterPipe,
-		AttrFilterPipe,
-		SafeContentPipe,
+    // pipes
+    CatFilterPipe,
+    AttrFilterPipe,
+    SafeContentPipe,
 
-		// // blog-post
-		PostOneComponent,
-		PostTwoComponent,
-		PostThreeComponent,
-		PostFourComponent,
-	],
+    // // blog-post
+    PostOneComponent,
+    PostTwoComponent,
+    PostThreeComponent,
+    PostFourComponent,
+  ],
 
-	entryComponents: [
-		VideoModalComponent,
-		QuickViewComponent,
-		QuickViewTwoComponent,
-		NewsletterModalComponent,
-		LoginModalComponent
-	]
+  entryComponents: [
+    VideoModalComponent,
+    QuickViewComponent,
+    QuickViewTwoComponent,
+    NewsletterModalComponent,
+    LoginModalComponent,
+  ],
+  providers: [NgbModule, NgbNavModule],
 })
-
-export class SharedModule { }
+export class SharedModule {}

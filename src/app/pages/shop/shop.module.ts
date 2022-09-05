@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { OwlModule } from 'angular-owl-carousel';
 import { NouisliderModule } from 'ng2-nouislider';
 
@@ -48,9 +48,11 @@ import { ShopListThreeComponent } from './shared/list/shop-list-three/shop-list-
 		ShopRoutingModule,
 		RouterModule,
 		NgbModule,
+    NgbNavModule,
 		OwlModule,
 		NouisliderModule
-	]
+	],
+  providers:[NgbNavModule,NgbModule]
 } )
 
 export class ShopModule { }
