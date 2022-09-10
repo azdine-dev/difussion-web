@@ -11,6 +11,43 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family:'carmen' ;
+  src: url('/assets/fonts/carmen/Carmen-Sans-Light.otf') format('otf');
+  font-style: light;
+}
+@font-face {
+  font-family:'carmen' ;
+  src: url('/assets/fonts/carmen/Carmen-Sans-Bold.otf') format('otf');
+  font-style: bold;
+}
+@font-face {
+  font-family: 'carmen';
+  src: url('/assets/fonts/carmen/Carmen-Sans-Regular') format('otf');
+font-style: normal;
+}
+
+@font-face {
+  font-family: 'qanelas';
+  src: url('/assets/fonts/carmen/QanelasSoftDEMO-ExtraBold.otf') format('otf');
+  font-style: bold;
+}
+@font-face {
+  font-family: 'qanelas';
+  src: url('/assets/fonts/carmen/QanelasSoftDEMO-UltraLight.otf') format('otf');
+  font-style: light;
+}
+@font-face {
+  font-family: 'point';
+  src: url('/assets/fonts/point/PointRegular.otf') format('otf');
+  font-style: bold;
+}
+@font-face {
+  font-family: 'caros';
+  src: url('/assets/fonts/caros/cretype-Caros-Bold.otf') format('otf');
+  font-style : bold;
+}
+
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
     font-family: "molla";

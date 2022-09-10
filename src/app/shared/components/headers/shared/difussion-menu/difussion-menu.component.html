@@ -1,0 +1,1673 @@
+<nav class="main-nav">
+  <ul class="menu sf-arrows">
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="" class=""><i class="icon-home accueil"></i></a>
+    </li>
+    <!-- Visage -->
+    <li
+      [class.active]="current.includes('/shop/product/3cols?category=visage')"
+    >
+      <a
+        routerLink="/shop/product/3cols"
+        [queryParams]="{ category: 'visage' }"
+        class=""
+        >Visage</a
+      >
+
+      <div class="megamenu megamenu-md demo">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins Anti-Âge Et Anti-Rides
+                    </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list">Premières rides</a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Rides installées</a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Rides marquées / perte de fermeté</a
+                      >
+                    </li>
+                  </ul>
+
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins Hydratants Et Nutrition
+                    </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Hydratants toutes peaux
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Hydratants peaux normales à mixtes
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Hydratants peaux sèches
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Hydratants peaux intolérantes
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Hydratants peaux atopiques
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> Mmasques Visage </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Gommages Et Exflioants Visage
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> Eaux Thermales </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins Anti-Rougeurs / Peau Sensible / Squames
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins Anti-Taches Et Dépigmentants
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins Peau Grasse / Mixte Et Acné
+                    </a>
+                  </div>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Nettoyants / Purifiants
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Matifiants / Hydratants
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Soins teintés </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Soins spécifiques </a>
+                  </li>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      SOINS RÉPARATEURS / CICATRISANTS
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> YEUX ET LÈVRES </a>
+                  </div>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Démaquillants yeux </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins Anti-poches et cernes
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Contour des yeux et lèvres
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins cils et sourcils
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Sticks lèvres et Réparateurs
+                    </a>
+                  </li>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Lentilles De Contact Et Vision
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> Soins Pour Homme </a>
+                  </div>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Rasage & après-rasage
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Nettoyants visage Homme
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins Hydratants Homme
+                    </a>
+                  </li>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      DÉMAQUILLANTS, NETTOYANTS VISAGE
+                    </a>
+                  </div>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Eau / Tonique / Lotion
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Lait / Mousse / Emulsion
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Eau / Tonique / Lotion
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Gel / Crème / Huile
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Cotons démaquillants / Lingettes et éponge
+                    </a>
+                  </li>
+
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> Maquillage </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Outils & Accessoires Beauté
+                    </a>
+                  </div>
+                </div>
+                <!--fn col-4-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!--Corps-->
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">Corps</a>
+
+      <div class="megamenu megamenu-md demo">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      HYDRATATION ET NUTRITION CORPS
+                    </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list">Soins Hydratation </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Soins Hydratation Peaux Sèches et Atopiques
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Soins Hydratation Anti-âge
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Soins Hydratation Teintés / Bonne mine
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      LAIT CORPS ECLAIRCISSANT
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      GOMMAGE ET EXFOLIANT CORPS
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> JAMBES LOURDES </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      SOINS BUSTE ET SEINS
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> SOINS DES MAINS </a>
+                  </div>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Mains Sèches et Abîmées
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins Anti-taches - Anti-âge Mains
+                    </a>
+                  </li>
+
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> MANUCURE </a>
+                  </div>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Soins des Ongles </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Vernis à ongles </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Dissolvant </a>
+                  </li>
+
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> SOINS DES PIEDS </a>
+                  </div>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >Pieds secs et abîmés
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Pieds fatigués et échauffés
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Pansements pieds et coussinets
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Pédicure </a>
+                  </li>
+
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      ACCESSOIRES MANUCURE ET PÉDICURE
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      EPILATION / DÉCOLORATION
+                    </a>
+                  </div>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >Crème et mousse dépilatoire
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Cire et Bandes Dépilatoires
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Soins Décolorants </a>
+                  </li>
+
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >ARTICULATIONS ET PATCHS CHAUFFANTS
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">MASSAGE </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">PARFUM </a>
+                  </div>
+
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Parfum Femme </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Parfum Femme </a>
+                  </li>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> VITILIGO </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <!--Cheveux-->
+
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">CHEVEUX</a>
+
+      <div class="megamenu megamenu-md demo">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> SHAMPOOING </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list"
+                        >Shampooing Doux et Fréquent
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Shampooing Antipelliculaire
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Shampooing Cheveux Gras</a
+                      >
+                    </li>
+
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Shampooing Cheveux Secs</a
+                      >
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Shampooing Cheveux Frisés et Crépus</a
+                      >
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Shampooing Cheveux Colorés</a
+                      >
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Shampooing Reflets et Brillance</a
+                      >
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Shampooing Cheveux Gras</a
+                      >
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Shampooing Cheveux Gras</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> SOINS ANTI-CHUTE</a>
+                  </div>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Shampooing Anti-chut
+                    </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Ampoules et Lotions Anti-chute
+                    </a>
+                  </li>
+
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >APRÈS-SHAMPOOING / SOIN DES CHEVEUX
+                    </a>
+                  </div>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols"> Après-shampooing </a>
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins Défrisant et Lissant</a
+                    >
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Masques / Baumes / Huiles Capillaires</a
+                    >
+                  </li>
+                  <li [class.active]="current.includes('shop/sidebar/3cols')">
+                    <a routerLink="/shop/sidebar/3cols">
+                      Soins Spray Capillaires</a
+                    >
+                  </li>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> COLORATIONS </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> SHAMPOOING SEC </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      LAQUES ET PRODUITS COIFFANTS
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      APPAREILS & OUTILS DE COIFFURE
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> CAPILLAIRE SOLAIRE </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> ANTI-POUX </a>
+                  </div>
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Shampooing Anti-poux
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">Lotions anti-poux </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Accessoires anti-poux
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <!--Hygiene-->
+
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">Hygiène</a>
+
+      <div class="megamenu megamenu-md demo corps">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> DOUCHE & BAIN </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list"
+                        >Gel douche / savon liquide / Gommage
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Gel douche et savon peaux atopiques
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Soins Hydratation Anti-âge
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"> Huiles lavantes </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"> Savon et pain </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Bain (moussant / huile / sels / soins)
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> HAMMAM & SPA </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      DÉODORANTS ET ANTI-TRANSPIRANTS
+                    </a>
+                  </div>
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list"
+                        >Transpiration Excessive
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Transpiration des Pieds
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">NEZ ET OREILLES </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list">Hygiène nasale </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Nettoyage auriculaire
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">
+                        Protection auditive
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Sérum physiologique
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Ronflement </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">HYGIÈNE INTIME </a>
+                  </div>
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">Toilette intime </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Lingettes Intimes
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"> Tampons</a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Serviettes hygiéniques / Slips jetables</a
+                      >
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Serviettes hygiéniques / Slips jetables</a
+                      >
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Protections incontinence et Couches adultes</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">SEXUALITÉ </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">Préservatifs</a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Gel Lubrifiants et Accessoires
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Tests de grossesse et d'ovulation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                -->
+                <!--fn col-4-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!--DENTAIRE-->
+
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">Dentaire</a>
+
+      <div class="megamenu megamenu-md demo corps">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> BROSSES À DENTS </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list"
+                        >Brosses à dents manuelles
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Brosses à dents électriques
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Brosses à dents enfants
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Brosses à dents spécialisées
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> DENTIFRICES </a>
+                  </div>
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list"
+                        >Dentifrices Protection Caries
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Dentifrices Gencives Sensibles
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Dentifrices Blanchissants
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Dentifrices Enfants
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Dentifrices Orthodontiques
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">HALEINE FRAÎCHE </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >BAIN DE BOUCHE ET SOIN GENCIVE
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">FILS DENTAIRES </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">APPAREILS DENTAIRES </a>
+                  </div>
+                </div>
+                <!--fn col-4-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!--SANTE-->
+
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">Santé</a>
+
+      <div class="megamenu megamenu-md demo corps">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">
+                      PANSEMENTS ET PREMIERS SOINS
+                    </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list"
+                        >Désinfectants / Antiseptiques / Asséchants
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Pansements simples
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"
+                        >Pansements enfants
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Pansements spécifiques
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Protection des pieds et coussinets
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Pansements spécifiques
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Compresses et cotons
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols">
+                        Soins Chocs et Brûlures
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/3cols')">
+                      <a routerLink="/shop/sidebar/3cols"> Orthèse </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >RHUME / SOINS RESPIRATOIRES / GORGE
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">MAL DES TRANSPORTS </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >CRÈMES SPORTS / MUSCULAIRE
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">ANTI-VERRUES</a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">ANTI-MOUSTIQUES</a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >SPRAY ANTIPARASITAIRE ASSAINISSANT</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >MATÉRIEL PARAMÉDICAL
+                    </a>
+                  </div>
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list">Thermomètre </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Tensiomètre / Oxymètre
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Controle glycemie </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Pèse personne </a>
+                    </li>
+                  </ul>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">LUNETTES </a>
+                  </div>
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Lunettes Loupe </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Lunettes de Soleil
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--fn col-4-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!--  SOLAIRE -->
+
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">Solaire</a>
+
+      <div class="megamenu megamenu-md demo corps">
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> CRÈMES SOLAIRES </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list"
+                        >Solaires invisibles
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Solaires teintées </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >CRÈMES SOLAIRES ENFANT
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">AUTOBRONZANTS</a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">SOINS APRÈS-SOLEIL </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >PROLONGATEUR DE BRONZAGE
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >STICK LÈVRES SOLAIRE
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">DIÉTÉTIQUE SOLAIRE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!--FIN SOLAIRE-->
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">Bébé</a>
+
+      <div class="megamenu megamenu-md demo corps">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> HYGIÈNE BÉBÉ </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list">Bain et toilette </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Lingettes </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Change </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Mouche bébé </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Couche bébé </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">SOINS VISAGE </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">SOINS CORPS </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> BIBERONS ET TASSES </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">SUCETTES </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >ACCESSOIRES PUÉRICULTURE
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >EAUX PARFUMÉES ET COFFRETS
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">FUTURE MAMAN </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">SOINS VISAGE </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">SOINS CORPS </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >TESTS DE GROSSESSE ET D'OVULATION
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >ALLAITEMENT ET STÉRILISATION
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >SOINS DES VERGETURES
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >COMPLÉMENTS ALIMENTAIRES GROSSESSE
+                    </a>
+                  </div>
+                </div>
+                <!--fn col-4-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">COMPLÉMENTS ALIMENTAIRES</a>
+
+      <div class="megamenu megamenu-md demo corps">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> VITAMINES ET FORME </a>
+                  </div>
+
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list"
+                        >Comprimés et gélules
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Ampoules / Sirop / Jus / Pastilles
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols">Sachets</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >COMPLÉMENTS ANTI-ÂGE
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >COMPLÉMENTS CHEVEUX ET ONGLES
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >BIEN-ÊTRE, EQUILIBRE ÉMOTIONNEL, DÉPRIME
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >TRANSIT / DIGESTION / ELIMINATION
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">MÉNOPAUSE</a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >GYNÉCOLOGIE / TROUBLE URINAIRES
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">CIRCULATION, CŒUR </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >CARTILAGES ET ARTICULATIONS
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >SOMMEIL - DÉTENTE - NERVOSITÉ
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >COMPLÉMENTS ALIMENTAIRES NATURELS
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >COMPLÉMENTS ALIMENTAIRES ENFANT
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >COMPLÉMENTS ALIMENTAIRES SÉNIOR
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"> SPÉCIAL SPORT </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">OPHTALMOLOGIE </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >TROUBLES URINAIRES MASCULINS
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >DÉFENSES IMMUNITAIRES
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >TONUS SEXUEL ET FERTILITÉ
+                    </a>
+                  </div>
+                </div>
+                <!--fn col-4-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">AROMATHÉRAPIE</a>
+
+      <div class="megamenu megamenu-md demo corps">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">HUILES VÉGÉTALES</a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">HUILES ESSENTIELLES </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >COMPLEXES D'HUILES ESSENTIELLES
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >DIFFUSEURS / PARFUMS D'AMBIANCE
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">SPRAYS D'AMBIANCE </a>
+                  </div>
+                </div>
+                <!--fn col-4-->
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="banner banner-overlay">
+                <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                  <img
+                    src="assets/images/menu/banner-1.jpg"
+                    alt="Banner"
+                    width="218"
+                    height="314"
+                  />
+
+                  <div class="banner-content banner-content-top">
+                    <div class="banner-title text-white">
+                      Last
+                      <br />Chance
+                      <br />
+                      <span>
+                        <strong>Sale</strong>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">MINCEUR</a>
+
+      <div class="megamenu megamenu-md demo corps">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">CRÈMES MINCEUR </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">COMPLÉMENTS MINCEUR </a>
+                  </div>
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list"
+                        >Boissons et ampoules minceur
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Comprimés et gélules
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Substituts de repas et biscuits
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >ACCESSOIRES ET VÊTEMENTS MINCEUR
+                    </a>
+                  </div>
+                </div>
+                fn col-4
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">MINCEUR</a>
+
+      <div class="megamenu megamenu-md demo corps">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">CRÈMES MINCEUR </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">COMPLÉMENTS MINCEUR </a>
+                  </div>
+                  <ul>
+                    <li [class.active]="current.includes('shop/sidebar/list')">
+                      <a routerLink="/shop/sidebar/list"
+                        >Boissons et ampoules minceur
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Comprimés et gélules
+                      </a>
+                    </li>
+                    <li [class.active]="current.includes('shop/sidebar/2cols')">
+                      <a routerLink="/shop/sidebar/2cols"
+                        >Substituts de repas et biscuits
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >ACCESSOIRES ET VÊTEMENTS MINCEUR
+                    </a>
+                  </div>
+                </div>
+                <!--fn col-4-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li [class.active]="current.includes('/shop')">
+      <a routerLink="/shop/sidebar/list" class="">NATUREL ET BIO</a>
+
+      <div class="megamenu megamenu-md demo corps">
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <div class="menu-col">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >COMPLÉMENTS ALIMENTAIRES NATURELS
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >AMPOULES ET BOISSONS NATURELLES
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">THÉS ET TISANES </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">ALIMENTS BIO </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >AMPOULES ET BOISSONS NATURELLES
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols"
+                      >COSMÉTIQUES NATURELS ET BIO
+                    </a>
+                  </div>
+                  <div class="menu-title">
+                    <a routerLink="/shop/sidebar/3cols">EAUX FLORALES </a>
+                  </div>
+                </div>
+                <!--fn col-4-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="banner banner-overlay">
+              <a routerLink="/shop/sidebar/list" class="banner banner-menu">
+                <img
+                  src="assets/images/menu/banner-1.jpg"
+                  alt="Banner"
+                  width="218"
+                  height="314"
+                />
+
+                <div class="banner-content banner-content-top">
+                  <div class="banner-title text-white">
+                    Last
+                    <br />Chance
+                    <br />
+                    <span>
+                      <strong>Sale</strong>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</nav>

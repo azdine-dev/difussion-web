@@ -72,6 +72,8 @@ import { PostOneComponent } from './components/blog-post/post-one/post-one.compo
 import { PostTwoComponent } from './components/blog-post/post-two/post-two.component';
 import { PostThreeComponent } from './components/blog-post/post-three/post-three.component';
 import { PostFourComponent } from './components/blog-post/post-four/post-four.component';
+import { DifussionMenuComponent } from './components/headers/shared/difussion-menu/difussion-menu.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -136,6 +138,7 @@ import { PostFourComponent } from './components/blog-post/post-four/post-four.co
     PostThreeComponent,
     PostFourComponent,
     CountToComponent,
+    DifussionMenuComponent,
   ],
 
   imports: [
@@ -146,6 +149,7 @@ import { PostFourComponent } from './components/blog-post/post-four/post-four.co
     TranslateModule,
     OwlModule,
     LazyLoadImageModule,
+    ScrollingModule
   ],
 
   exports: [

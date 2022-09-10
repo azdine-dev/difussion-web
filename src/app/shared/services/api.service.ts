@@ -40,6 +40,12 @@ export class ApiService {
     return this.http.get(`${environment.SERVER_URL}/api/${temp}`);
   }
 
+  public getCategoryData(category: string): Observable<any> {
+    return this.http.get(
+      `${environment.SERVER_URL}/api/product-categories/categ/${category}`
+    );
+  }
+
   /**
    * Get Products
    */

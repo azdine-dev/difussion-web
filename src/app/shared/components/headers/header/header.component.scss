@@ -1,0 +1,15 @@
+.header-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  margin-bottom: -3em;
+  width: 74%;
+}
+.wishlist {
+  margin-left: 14px;
+  margin-top: 10px;
+}

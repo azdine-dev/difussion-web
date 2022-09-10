@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   demo: 'difussion',
-  SERVER_URL: 'https://difussion-api.herokuapp.com',
+  SERVER_URL: 'http://localhost:1337',
 };
 
 /*

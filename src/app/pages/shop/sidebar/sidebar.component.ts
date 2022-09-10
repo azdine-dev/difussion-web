@@ -11,6 +11,11 @@ import { UtilsService } from 'src/app/shared/services/utils.service';
 })
 export class SidebarPageComponent implements OnInit {
   products = [];
+  category = {
+    name: '',
+    count: 0,
+  };
+  subCategories = [];
   perPage = 12;
   type = 'list';
   totalCount = 0;
@@ -43,6 +48,7 @@ export class SidebarPageComponent implements OnInit {
 
     this.activeRoute.queryParams.subscribe((params) => {
       this.loaded = false;
+      this.category.name = params['category'];
 
       if (params['searchTerm']) {
         this.searchTerm = params['searchTerm'];
@@ -61,13 +67,22 @@ export class SidebarPageComponent implements OnInit {
         .subscribe((result) => {
           this.products = result.products;
           this.totalCount = result.totalCount;
-
+          if (this.category.name != '') {
+            this.category.count = this.totalCount;
+          }
           this.loaded = true;
           if (!this.firstLoad) {
             this.firstLoad = true;
           }
 
           this.utilsService.scrollToPageContent();
+        });
+
+      this.apiService
+        .getCategoryData(this.category.name)
+        .subscribe((result) => {
+          this.subCategories = result?.categories?.sub_categories;
+          console.log(result, 'erwer');
         });
     });
   }

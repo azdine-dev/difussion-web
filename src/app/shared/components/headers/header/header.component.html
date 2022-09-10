@@ -34,13 +34,17 @@
                   ><i class="icon-phone"></i>Call: +0123 456 789</a
                 >
               </li>
-              <li><molla-wishlist-menu></molla-wishlist-menu></li>
+              <li>
+                <molla-wishlist-menu></molla-wishlist-menu>
+              </li>
+              <li></li>
+
               <li><a routerLink="/pages/about">About Us</a></li>
               <li><a routerLink="/pages/contact">Contact Us</a></li>
               <li>
-                <a href="javascript:;" (click)="showLoginModal($event)"
-                  ><i class="icon-user"></i>Login</a
-                >
+                <a href="javascript:;" (click)="showLoginModal($event)">
+                  <i class="icon-user"></i>Login
+                </a>
               </li>
             </ul>
           </li>
@@ -61,22 +65,26 @@
       <div [ngClass]="containerClass">
         <div class="header-left">
           <molla-mobile-button></molla-mobile-button>
-
-          <a routerLink="/" class="logo">
-            <img
-              src="assets/images/home/logo3.png"
-              alt="Molla Logo"
-              width="105"
-              height="24"
-            />
-          </a>
         </div>
+        <div class="header-items">
+          <div class="header-search">
+            <a routerLink="/" class="logo">
+              <img
+                src="assets/images/home/logo3.png"
+                alt="Difussion Logo"
+                width="105"
+                height="24"
+              />
+            </a>
 
-        <div class="header-right">
-          <molla-main-menu></molla-main-menu>
-          <molla-header-search class="ml-auto"></molla-header-search>
+            <molla-header-search class="ml-auto"></molla-header-search>
+            <molla-cart-menu></molla-cart-menu>
+          </div>
+          <div class="header-right">
+            <!-- <molla-main-menu></molla-main-menu> -->
 
-          <molla-cart-menu></molla-cart-menu>
+            <molla-difussion-menu></molla-difussion-menu>
+          </div>
         </div>
       </div>
     </div>

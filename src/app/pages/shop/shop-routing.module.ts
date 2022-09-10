@@ -17,7 +17,7 @@ const routes: Routes = [
   //   component: SidebarPageComponent,
   // },
   {
-    path: ':type',
+    path: 'product/:type',
     component: SidebarPageComponent,
   },
   {

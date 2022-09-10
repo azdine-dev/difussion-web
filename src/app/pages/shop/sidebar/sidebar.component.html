@@ -7,7 +7,7 @@
           <a routerLink="/">Home</a>
         </li>
         <li class="breadcrumb-item">
-          <a routerLink="/shop/sidebar/list">Shop</a>
+          <a routerLink="/shop/product/list">Shop</a>
         </li>
         <li class="breadcrumb-item active">{{ pageTitle }}</li>
         <li class="breadcrumb-item" *ngIf="searchTerm != ''">
@@ -53,7 +53,7 @@
 
               <div class="toolbox-layout">
                 <a
-                  routerLink="/shop/list"
+                  routerLink="/shop/product/list"
                   queryParamsHandling="merge"
                   class="btn-layout"
                   routerLinkActive="active"
@@ -67,7 +67,7 @@
                 </a>
 
                 <a
-                  routerLink="/shop/2cols"
+                  routerLink="/shop/product/2cols"
                   queryParamsHandling="merge"
                   class="btn-layout"
                   routerLinkActive="active"
@@ -81,7 +81,7 @@
                 </a>
 
                 <a
-                  routerLink="/shop/3cols"
+                  routerLink="/shop/product/3cols"
                   queryParamsHandling="merge"
                   class="btn-layout"
                   routerLinkActive="active"
@@ -97,7 +97,7 @@
                 </a>
 
                 <a
-                  routerLink="/shop/4cols"
+                  routerLink="/shop/product/4cols"
                   queryParamsHandling="merge"
                   class="btn-layout"
                   routerLinkActive="active"
@@ -143,7 +143,12 @@
             <div class="skel-widget"></div>
           </div>
           <ng-template #sidebarLoaded>
-            <molla-shop-sidebar-one [toggle]="toggle"> </molla-shop-sidebar-one>
+            <molla-shop-sidebar-one
+              [toggle]="toggle"
+              [category]="category"
+              [subCategories]="subCategories"
+            >
+            </molla-shop-sidebar-one>
 
             <button
               class="sidebar-fixed-toggler"
